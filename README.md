@@ -66,6 +66,7 @@
 데이터베이스는 개념적 설계를 우선적으로 진행하고, 논리적 설계를 진행하였다.
 
 **[개념적 설계]**
+
 <img src="./assets/backend_details/erd.drawio.png">
 
 주요 엔티티에는 User(사용자), Group(사용자가 생성하는 그룹), Project(그룹에 배포하는 프로젝트), 이외 권한 처리를 위한 GroupMembership과, ProjectAuthority가 있다.
