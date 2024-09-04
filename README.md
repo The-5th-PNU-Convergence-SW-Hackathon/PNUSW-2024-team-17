@@ -15,7 +15,7 @@
 #### 2.1. 시스템 구성도
 ![시스템아키텍쳐](https://github.com/user-attachments/assets/7ad4656c-7c53-422d-b1f8-cf2a2e840fe3)
 
-#### 2.1. 사용 기술
+#### 2.2. 사용 기술
 <div align="center">
 
 ![java 17](https://img.shields.io/badge/-Java%2017-ED8B00?style=for-the-badge&logo=java&logoColor=white)
@@ -42,8 +42,8 @@
 
 </div>
 
-## 세부 구성
-### 백엔드 아키텍처 설계
+#### 2.3. 세부 구성
+#### 백엔드 아키텍처 설계
 전체적인 구성도는 다음과 같으며, 백엔드 컴포넌트의 구성요소는 WAS(Web Application Server), In Memory Cache, RDBMS로 구성되어 있으며, 각각 Tomcat, Redis, PostgreSQL을 사용한다.
 
 <img src="./assets/backend_details/arch2.drawio.png">
@@ -61,7 +61,7 @@
 | Docker | - 어플리케이션 및 의존성 컨테이너화<br>- 인프라 구성요소와의 환경 일관성 유지 |
 
 
-### 데이터베이스 설계
+#### 데이터베이스 설계
 데이터베이스는 개념적 설계를 우선적으로 진행하고, 논리적 설계를 진행하였다.
 
 **[개념적 설계]**
