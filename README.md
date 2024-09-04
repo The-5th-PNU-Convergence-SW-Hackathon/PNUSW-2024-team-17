@@ -1,3 +1,48 @@
+### 1. 프로젝트 소개
+#### 1.1. 개발배경 및 필요성
+학생들이 텀프로젝트나 비교과 활동을 통해 다양한 프로젝트를 개발하지만, 실제로 실행 가능한 형태로 결과물을 공유하는 경우는 드물다. 이러한 결과물의 배포가 이루어지지 않는 주요 원인은 상용 클라우드 서비스의 비용 부담과 배포 과정에서의 기술적인 어려움이다. 이로 인해 대부분의 학생들은 개발 환경에서 실행한 화면을 녹화하여 결과를 간접적으로 공유하는 방식을 선택하고 있다.
+
+#### 1.2. 개발 목표 및 주요 내용
+서버리스 프로젝트 배포 시스템을 개발하여 학생들이 비용이나 기술적 장벽 없이 자유롭게 자신의 프로젝트를 배포하고 공유할 수 있도록 하는 것을 지원하고자 한다.
+
+#### 1.3. 세부내용
+프로젝트를 배포 템플릿을 활용해 컨테이너로 쉽게 배포할 수 있도록 하고 지속적인 운영이 가능하도록 지원한다. 이를 통해 학생들은 자신의 프로젝트를 배포하여 실행 가능한 형태로 공유함으로써 실제 피드백을 받아볼 수 있고 포트폴리오로도 활용할 수 있다.
+
+#### 1.4. 기존 서비스 대비 차별성
+
+#### 1.5. 사회적가치 도입 계획
+
+### 2. 상세설계
+#### 2.1. 시스템 구성도
+![시스템아키텍쳐](https://github.com/user-attachments/assets/7ad4656c-7c53-422d-b1f8-cf2a2e840fe3)
+
+#### 2.1. 사용 기술
+<div align="center">
+
+![java 17](https://img.shields.io/badge/-Java%2017-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![spring boot 3.1.3](https://img.shields.io/badge/Spring%20boot%203.1.3-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
+![Python 3.8.10](https://img.shields.io/badge/python%203.8.10-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Flask 2.2.2](https://img.shields.io/badge/Flask%202.2.2-000000?style=for-the-badge&logo=flask&logoColor=white)
+
+![mysql 8.0](https://img.shields.io/badge/MySQL%208.0-005C84?style=for-the-badge&logo=mysql&logoColor=white)
+![Redis 6.2](https://img.shields.io/badge/Redis%206.2-DC382D?style=for-the-badge&logo=Redis&logoColor=white)
+![AWS S3](https://img.shields.io/badge/AWS%20S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white)
+![AWS EC2](https://img.shields.io/badge/AWS%20EC2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white)
+![Naver cloud](https://img.shields.io/badge/naver%20cloud-03C75A?style=for-the-badge&logo=naver&logoColor=white)
+
+![nginx 1.18.0](https://img.shields.io/badge/nginx%201.18.0-009639?style=for-the-badge&logo=nginx&logoColor=white)
+![docker 24.0.7](https://img.shields.io/badge/docker%2024.0.7-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Kubernates 1.28.0](https://img.shields.io/badge/KUBERNETES%201.28.0-326CE5?style=for-the-badge&logo=Kubernetes&logoColor=white)
+![github action](https://img.shields.io/badge/GITHUB%20ACTIONS-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
+
+![React 18.2.0](https://img.shields.io/badge/React%2018.2.0-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+![Tailwind CSS 3.3.0](https://img.shields.io/badge/Tailwind%20CSS%203.3.0-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![MUI 5.13.4](https://img.shields.io/badge/MUI%205.13.4-007FFF?style=for-the-badge&logo=mui&logoColor=white)
+![ESLint 8.47.0](https://img.shields.io/badge/ESLint%208.47.0-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)
+![Prettier 3.0.0](https://img.shields.io/badge/Prettier%203.0.0-F7B93E?style=for-the-badge&logo=prettier&logoColor=white)
+
+</div>
+
 ## 세부 구성
 ### 백엔드 아키텍처 설계
 전체적인 구성도는 다음과 같으며, 백엔드 컴포넌트의 구성요소는 WAS(Web Application Server), In Memory Cache, RDBMS로 구성되어 있으며, 각각 Tomcat, Redis, PostgreSQL을 사용한다.
@@ -85,3 +130,105 @@
 
 3. 리소스 접근 허용/거부
    인증된 사용자이고, 해당 리소스에 대한 접근 한권이 있으면 요청을 허용한다. 그렇지 않은 경우, 요청을 거부하고 적절한 오류 응답을 반환한다.
+
+### 3. 개발결과
+#### 3.1. 전체시스템 흐름도
+![전체 시스템 흐름도](https://github.com/user-attachments/assets/1659c9d3-e4cd-4586-b409-a38f8d468cf9)
+
+#### 3.2. 기능설명
+| 페이지         | 기능 설명                                                                                                          |
+|----------------|--------------------------------------------------------------------------------------------------------------------|
+| 회원가입 페이지 | - 사용자 이름과 이메일을 입력하여 회원가입을 한다.<br>- 이메일은 이메일 형식으로 입력한다.                               |
+| 로그인 페이지   | - 이메일과 비밀번호로 로그인한다.                                                                                      |
+| 메인 페이지     | - 다른 그룹들의 프로젝트를 갤러리 형식으로 탐색한다.<br>- 좋아요순/조회순으로 정렬할 수 있다.<br>- 프로젝트명, 그룹명, 참가자명으로 검색할 수 있다. |
+| 사이드바        | - 사용자가 속한 그룹 목록을 확인한다.<br>- 각 그룹을 클릭하면 해당 그룹에 속한 프로젝트들이 펼쳐져 표시된다.<br>- 각 프로젝트를 클릭하면 해당 프로젝트 페이지로 이동한다. |
+| 프로젝트 페이지 | - 배포된 프로젝트의 URL을 제공한다.<br>- 버튼을 누르면 바로 이동할 수 있다.<br>- 프로젝트명, 사진, 개요, 설명, 프로젝트 참가자 목록을 확인할 수 있다.<br>- 댓글을 작성할 수 있다.<br>- 좋아요 버튼을 통해 프로젝트에 반응할 수 있다. |
+| 배포 페이지     | - 프로젝트명, 개요, 설명, 참여자를 수정한다.                                                                          |
+| 그룹 페이지     | - 그룹명, 소개, 그룹의 참여자, 결제수단, 프로젝트들을 확인할 수 있다.<br>- 그룹의 권한은 어드민과 멤버로 나뉜다.<br>- 그룹의 어드민일 경우, 그룹명과 그룹 소개를 수정한다.<br>- 참여자를 추가 및 삭제한다.<br>- 참여자 권한을 어드민 혹은 멤버로 변경한다.<br>- 결제 수단을 추가 및 삭제한다.<br>- 프로젝트를 추가할 수 있다.<br>- 그룹의 멤버일 경우, 그룹명, 소개, 그룹의 참여자, 프로젝트들을 확인할 수 있다. |
+| 마이페이지       | - 프로필 사진, 자기소개, 참여한 그룹과 프로젝트를 확인할 수 있다.<br>- 본인의 마이페이지일 경우, 프로필 사진과 자기소개를 수정할 수 있다. |
+
+#### 3.3. 기능 명세
+
+#### 3.4. 디렉토리 구조
+- `Front End`
+```
+PICKLE-FRONT/
+├── src/
+│   ├── components/
+│   │   ├── Header.js
+│   │   ├── Footer.js
+│   │   └── Sidebar.js
+│   ├── pages/
+│   │   ├── HomePage.js
+│   │   ├── AboutPage.js
+│   │   └── ContactPage.js
+│   └── utils/
+│       ├── api.js
+│       └── helpers.js
+├── public/
+│   ├── index.html
+│   └── favicon.ico
+├── .eslintrc.json
+├── .prettierrc
+├── .postcss.config.js
+├── .jsconfig.json
+├── .gitignore
+├── .tailwind.config.js
+├── .webpack.config.js
+├── README.md
+└── package.json
+```
+- `Back End`
+```
+├── PickleApplication.java
+├── auth
+│   ├── api
+│   ├── dto
+│   ├── exception
+│   └── service
+├── global
+│   ├── GlobalExceptionHandler.java
+│   ├── configuration
+│   ├── constants
+│   ├── response
+│   ├── security
+│   └── utils
+├── group
+│   ├── api
+│   ├── dao
+│   ├── dto
+│   ├── entity
+│   ├── exception
+│   ├── service
+│   └── utils
+├── invitation
+│   └── entity
+├── project
+│   ├── api
+│   ├── dao
+│   ├── entity
+│   └── service
+└── user
+    ├── api
+    ├── dao
+    ├── dto
+    ├── entity
+    └── service
+```
+
+### 4. 설치 및 사용 방법
+> 제품을 설치하기 위헤 필요한 소프트웨어 및 설치 방법을 작성하세요.
+>
+> 제품을 설치하고 난 후, 실행 할 수 있는 방법을 작성하세요.
+
+### 5. 소개 및 시연 영상
+> 프로젝트에 대한 소개와 시연 영상을 넣으세요.
+> 프로젝트 소개 동영상을 교육원 메일(swedu@pusan.ac.kr)로 제출 이후 센터에서 부여받은 youtube URL주소를 넣으세요.
+
+### 6. 팀 소개
+> 팀원 소개 & 구성원 별 역할 분담 & 간단한 연락처를 작성하세요.
+
+### 7. 해커톤 참여 후기
+> 팀원 별 해커톤 참여 후기를 작성하세요.
+<br/>
+
