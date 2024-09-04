@@ -43,7 +43,7 @@
 </div>
 
 #### 2.3. 세부 구성
-#### 2.3.1 백엔드 아키텍처 설계
+#### 2.3.1. 백엔드 아키텍처 설계
 전체적인 구성도는 다음과 같으며, 백엔드 컴포넌트의 구성요소는 WAS(Web Application Server), In Memory Cache, RDBMS로 구성되어 있으며, 각각 Tomcat, Redis, PostgreSQL을 사용한다.
 
 <img src="./assets/backend_details/arch2.drawio.png">
@@ -61,7 +61,7 @@
 | Docker | - 어플리케이션 및 의존성 컨테이너화<br>- 인프라 구성요소와의 환경 일관성 유지 |
 
 
-#### 2.3.2 데이터베이스 설계
+#### 2.3.2. 데이터베이스 설계
 데이터베이스는 개념적 설계를 우선적으로 진행하고, 논리적 설계를 진행하였다.
 
 **[개념적 설계]**
@@ -101,7 +101,7 @@
 
   <img width="250" src="./assets/backend_details/invitation.drawio.png">
 
-#### 2.3.3 Spring Security 필터 체인 흐름 구현
+#### 2.3.3. Spring Security 필터 체인 흐름 구현
 
 백엔드 핵심 구성요소 중 하나인 RESTful API에 세밀한 접근 제어와 권한관리를 위해 Spring Security 필터 체인을 아래 그림과 같이 구성하였다.
 
