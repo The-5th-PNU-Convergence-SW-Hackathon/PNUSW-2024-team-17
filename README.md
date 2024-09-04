@@ -154,29 +154,44 @@
 ```
 PICKLE-FRONT/
 ├── src/
+│   ├── api/
+│   ├── assets/
 │   ├── components/
-│   │   ├── Header.js
-│   │   ├── Footer.js
-│   │   └── Sidebar.js
+│   │   ├── Buttons/
+│   │   ├── Input/
+│   │   ├── Navigation/
+│   │   └── Layout/
+│   │       ├── Container/
+│   │       ├── Sidebar/
+│   │       ├── Header/
+│   │       ├── Footer/
+│   │       └── MainLayout.jsx
+│   ├── constants/
+│   │   ├── muiTheme.js
+│   │   └── pickleTheme.js
 │   ├── pages/
-│   │   ├── HomePage.js
-│   │   ├── AboutPage.js
-│   │   └── ContactPage.js
-│   └── utils/
-│       ├── api.js
-│       └── helpers.js
+│   │   ├── Home/
+│   │   ├── Project/
+│   │   ├── Deploy/
+│   │   ├── Group/
+│   │   ├── Login/
+│   │   ├── Signup/
+│   │   └── Mypage/
+│   └── router/
+│       └── useMainRouter.jsx
 ├── public/
 │   ├── index.html
 │   └── favicon.ico
 ├── .eslintrc.json
 ├── .prettierrc
-├── .postcss.config.js
-├── .jsconfig.json
+├── postcss.config.js
+├── jsconfig.json
 ├── .gitignore
-├── .tailwind.config.js
-├── .webpack.config.js
+├── tailwind.config.js
+├── webpack.config.js
 ├── README.md
 └── package.json
+
 ```
 - `Back End`
 ```
