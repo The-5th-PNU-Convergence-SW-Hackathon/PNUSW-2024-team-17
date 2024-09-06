@@ -234,16 +234,20 @@ PICKLE-FRONT/
 ```
 
 ### 4. 설치 및 사용 방법
-> 제품을 설치하기 위헤 필요한 소프트웨어 및 설치 방법을 작성하세요.
->
-> 제품을 설치하고 난 후, 실행 할 수 있는 방법을 작성하세요.
+- frontend
+```
+yarn install
+yarn start
+```
 
 ### 5. 소개 및 시연 영상
-> 프로젝트에 대한 소개와 시연 영상을 넣으세요.
-> 프로젝트 소개 동영상을 교육원 메일(swedu@pusan.ac.kr)로 제출 이후 센터에서 부여받은 youtube URL주소를 넣으세요.
+https://youtu.be/n4fAz-0eJT8
 
 ### 6. 팀 소개
-> 팀원 소개 & 구성원 별 역할 분담 & 간단한 연락처를 작성하세요.
+| [신예준](https://github.com/yessjun) | [문여원](https://github.com/myeowon) | [홍지연](https://github.com/redzzzi) | [유승훈](https://github.com/hunsy) | [양라윤](https://github.com/) |
+|:-------:|:-------:|:-------:|:-------:|:-------:|
+| <img src="https://github.com/yessjun.png" width="100"> | <img src="https://github.com/myeowon.png" width="100"> | <img src="https://github.com/redzzzi.png" width="100"> | <img src="https://github.com/hunsy.png" width="100"> | <img src="https://github.com/.png" width="100"> |
+| 인프라 | 프론트 | 프론트 |백엔드 | 디자인 |
 
 ### 7. 해커톤 참여 후기
 > 팀원 별 해커톤 참여 후기를 작성하세요.
